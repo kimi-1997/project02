@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello AI Coding</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+      background: url('https://images.alphacoders.com/133/1331581.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      position: relative;
+    }
+
+    /* 遮罩层，让文字更清晰 */
+    body::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.35);
+      z-index: 0;
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding: 40px 50px;
+      background: rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(12px);
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #fff;
+      text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
+      margin-bottom: 30px;
+      letter-spacing: 2px;
+    }
+
+    input[type="text"] {
+      width: 360px;
+      padding: 14px 20px;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 12px;
+      outline: none;
+      background: rgba(255, 255, 255, 0.85);
+      color: #333;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+      transition: box-shadow 0.3s;
+    }
+
+    input[type="text"]:focus {
+      box-shadow: 0 4px 24px rgba(120, 100, 255, 0.5);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Hello AI Codeing</h1>
+    <input type="text" placeholder="请输入内容..." />
+  </div>
+</body>
+</html>
